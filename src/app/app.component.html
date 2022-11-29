@@ -1,0 +1,12 @@
+
+<div *ngFor="let i of fieldsConfig">
+  <app-my-input-component></app-my-input-component>
+</div>
+<div>
+  
+  <button type="submit" (click)="onSubmit()">submit</button>
+</div>
+
+<div *ngIf="flag">
+  Expected Result : {{result.join(',')}}
+</div>
